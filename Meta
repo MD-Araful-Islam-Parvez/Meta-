@@ -2,13 +2,13 @@
 
 echo "hello"
 
-apt update
+apt update -y
 
-apt upgrade 
+apt upgrade -y
 
-apt install curl
+apt install curl -y
 
-apt-get install gnupg
+apt-get install gnupg -y
 
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
   chmod 755 msfinstall && \
